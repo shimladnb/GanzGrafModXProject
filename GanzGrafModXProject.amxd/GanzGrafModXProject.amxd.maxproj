@@ -2,7 +2,7 @@
 	"name" : "GanzGrafModXProject.amxd",
 	"version" : 1,
 	"creationdate" : 3671861641,
-	"modificationdate" : 3671864705,
+	"modificationdate" : 3671870745,
 	"viewrect" : [ 25.0, 104.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -37,12 +37,12 @@
 		}
 ,
 		"externals" : 		{
-			"jit.ndi.receive~.mxo" : 			{
+			"jit.gl.spoutsender.mxe64" : 			{
 				"kind" : "object",
 				"local" : 1
 			}
 ,
-			"jit.ndi.send~.mxo" : 			{
+			"jit.ndi.send~.mxe64" : 			{
 				"kind" : "object",
 				"local" : 1
 			}
@@ -52,7 +52,12 @@
 				"local" : 1
 			}
 ,
-			"jit.ndi.send~.mxe64" : 			{
+			"jit.ndi.receive~.mxo" : 			{
+				"kind" : "object",
+				"local" : 1
+			}
+,
+			"jit.ndi.send~.mxo" : 			{
 				"kind" : "object",
 				"local" : 1
 			}
@@ -66,11 +71,10 @@
 				"kind" : "object",
 				"local" : 1
 			}
+
+		}
 ,
-			"jit.gl.spoutsender.mxe64" : 			{
-				"kind" : "object",
-				"local" : 1
-			}
+		"other" : 		{
 
 		}
 
