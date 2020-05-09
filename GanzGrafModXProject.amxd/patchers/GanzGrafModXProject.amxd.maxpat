@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 113.0, 79.0, 1428.0, 1086.0 ],
+		"rect" : [ 422.0, 113.0, 1428.0, 1086.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 123.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,19 +40,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frozen_object_attributes" : 					{
-						"servername" : "GanzGraf"
-					}
-,
-					"id" : "obj-18",
+					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.0, 823.0, 147.0, 22.0 ],
+					"patching_rect" : [ 78.0, 716.0, 248.0, 20.0 ],
+					"text" : "jit.gl.spoutsender sample @sendername GanzGraf"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 78.0, 759.0, 147.0, 22.0 ],
 					"text" : "jit.gl.syphonserver sample"
 				}
 
@@ -64,7 +71,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 50.0, 877.0, 304.0, 20.0 ],
+					"patching_rect" : [ 50.0, 796.0, 304.0, 20.0 ],
 					"text" : "jit.gl.videoplane sample @transform_reset 2 @depth_enable 0"
 				}
 
@@ -363,7 +370,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 25.0, 239.0, 33.0 ],
+					"patching_rect" : [ 21.0, 25.0, 239.0, 34.0 ],
 					"prototypename" : "ML.subpatcher-title",
 					"text" : "Ganz Graf Mod x",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.6 ]
@@ -394,7 +401,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 58.0, 508.0, 43.0 ],
+					"patching_rect" : [ 21.0, 58.0, 508.0, 44.0 ],
 					"prototypename" : "M4L.patcher-story",
 					"text" : "This is a simple mod of an original Max patch by Masato Tsutsui downloaded from  http://adsr.jp by synnack. Idea from maxforlive.com user vh at http://www.maxforlive.com/library/device/133/ganz-graf-live",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.6 ]
@@ -446,11 +453,11 @@
 					"presentation_rect" : [ 13.0, 92.0, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "sphere", "torus", "cylinder", "opencylinder", "cube", "opencube", "plane", "circle" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "Shape",
 							"parameter_mmax" : 7,
-							"parameter_shortname" : "Shape"
+							"parameter_shortname" : "Shape",
+							"parameter_enum" : [ "sphere", "torus", "cylinder", "opencylinder", "cube", "opencube", "plane", "circle" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -472,11 +479,11 @@
 					"presentation_rect" : [ 14.0, 142.0, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "Particles",
 							"parameter_mmax" : 10,
-							"parameter_shortname" : "Particles"
+							"parameter_shortname" : "Particles",
+							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -499,13 +506,13 @@
 					"presentation_rect" : [ 53.0, 29.5, 33.5, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "Color On Off",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "Color On Off"
+							"parameter_shortname" : "Color On Off",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -527,11 +534,11 @@
 					"presentation_rect" : [ 123.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Distance",
-							"parameter_shortname" : "Distance"
+							"parameter_shortname" : "Distance",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -553,11 +560,11 @@
 					"presentation_rect" : [ 184.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Slidedown",
-							"parameter_shortname" : "Slidedown"
+							"parameter_shortname" : "Slidedown",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -579,11 +586,11 @@
 					"presentation_rect" : [ 184.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseY",
-							"parameter_shortname" : "MouseY"
+							"parameter_shortname" : "MouseY",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -605,11 +612,11 @@
 					"presentation_rect" : [ 123.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseX",
-							"parameter_shortname" : "MouseX"
+							"parameter_shortname" : "MouseX",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -632,13 +639,13 @@
 					"presentation_rect" : [ 13.0, 29.5, 30.0, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "On Off",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "On Off"
+							"parameter_shortname" : "On Off",
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2
 						}
 
 					}
@@ -1730,7 +1737,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 929.666747999999984, 862.0, 255.0, 39.0 ],
+					"patching_rect" : [ 929.666747999999984, 862.0, 255.0, 40.0 ],
 					"text" : "jit.gl.mesh sample @draw_mode points @lighting_enable 0 @smooth_shading 1 @blend_enable 1 @blend_mode 3 1 @texture tex1 @point_size 3"
 				}
 
@@ -3640,6 +3647,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-4", 0 ]
@@ -3649,7 +3664,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -3825,13 +3840,13 @@
  ],
 		"parameters" : 		{
 			"obj-32" : [ "Color On Off", "Color On Off", 0 ],
+			"obj-28" : [ "MouseX", "MouseX", 0 ],
+			"obj-30" : [ "Slidedown", "Slidedown", 0 ],
+			"obj-37" : [ "Shape", "Shape", 0 ],
 			"obj-29" : [ "MouseY", "MouseY", 0 ],
 			"obj-33" : [ "Particles", "Particles", 0 ],
 			"obj-31" : [ "Distance", "Distance", 0 ],
-			"obj-37" : [ "Shape", "Shape", 0 ],
 			"obj-27" : [ "On Off", "On Off", 0 ],
-			"obj-28" : [ "MouseX", "MouseX", 0 ],
-			"obj-30" : [ "Slidedown", "Slidedown", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -3839,8 +3854,16 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "jit.gl.syphonserver.mxo",
-				"type" : "iLaX"
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "mc.jit.catch~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "jit.gl.spoutsender.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
