@@ -91,14 +91,14 @@
 					"presentation_rect" : [ 316.0, 92.0, 52.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 10.0,
 							"parameter_longname" : "SizeY",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 8000.0,
 							"parameter_initial" : [ 1080 ],
-							"parameter_shortname" : "SizeY",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "SizeY"
 						}
 
 					}
@@ -120,14 +120,14 @@
 					"presentation_rect" : [ 261.0, 92.0, 52.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : 10.0,
 							"parameter_longname" : "SizeX",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 8000.0,
 							"parameter_initial" : [ 1920 ],
-							"parameter_shortname" : "SizeX",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "SizeX"
 						}
 
 					}
@@ -147,7 +147,7 @@
 					"patching_rect" : [ 134.0, 22.0, 150.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 264.0, 6.0, 88.0, 18.0 ],
-					"text" : "Floating Window",
+					"text" : "Visible Window",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -166,13 +166,13 @@
 					"presentation_rect" : [ 264.0, 29.5, 30.0, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "FloatingWindow",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "FloatingWindow",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "FloatingWindow"
 						}
 
 					}
@@ -188,8 +188,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.0, 296.0, 87.0, 20.0 ],
-					"text" : "prepend floating"
+					"patching_rect" : [ 320.0, 296.0, 82.0, 20.0 ],
+					"text" : "prepend visible"
 				}
 
 			}
@@ -223,13 +223,13 @@
 					"presentation_rect" : [ 121.5, 29.5, 30.0, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "NDI TOGGLE",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "NDI TOGGLE",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "NDI TOGGLE"
 						}
 
 					}
@@ -665,11 +665,11 @@
 					"presentation_rect" : [ 13.0, 92.0, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "sphere", "torus", "cylinder", "opencylinder", "cube", "opencube", "plane", "circle" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "Shape",
 							"parameter_mmax" : 7,
-							"parameter_shortname" : "Shape",
-							"parameter_enum" : [ "sphere", "torus", "cylinder", "opencylinder", "cube", "opencube", "plane", "circle" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "Shape"
 						}
 
 					}
@@ -691,11 +691,11 @@
 					"presentation_rect" : [ 14.0, 142.0, 100.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "Particles",
 							"parameter_mmax" : 10,
-							"parameter_shortname" : "Particles",
-							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "Particles"
 						}
 
 					}
@@ -718,13 +718,13 @@
 					"presentation_rect" : [ 53.0, 29.5, 33.5, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "Color On Off",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "Color On Off",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "Color On Off"
 						}
 
 					}
@@ -746,11 +746,11 @@
 					"presentation_rect" : [ 123.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Distance",
-							"parameter_shortname" : "Distance",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "Distance"
 						}
 
 					}
@@ -772,11 +772,11 @@
 					"presentation_rect" : [ 184.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Slidedown",
-							"parameter_shortname" : "Slidedown",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "Slidedown"
 						}
 
 					}
@@ -798,11 +798,11 @@
 					"presentation_rect" : [ 184.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseY",
-							"parameter_shortname" : "MouseY",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "MouseY"
 						}
 
 					}
@@ -824,11 +824,11 @@
 					"presentation_rect" : [ 123.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0,
 							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseX",
-							"parameter_shortname" : "MouseX",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0
+							"parameter_shortname" : "MouseX"
 						}
 
 					}
@@ -851,13 +851,13 @@
 					"presentation_rect" : [ 13.0, 29.5, 30.0, 25.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_type" : 2,
 							"parameter_longname" : "On Off",
 							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "On Off",
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2
+							"parameter_shortname" : "On Off"
 						}
 
 					}
@@ -4106,18 +4106,18 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-34" : [ "SizeY", "SizeY", 0 ],
+			"obj-32" : [ "Color On Off", "Color On Off", 0 ],
+			"obj-29" : [ "MouseY", "MouseY", 0 ],
 			"obj-45" : [ "NDI TOGGLE", "NDI TOGGLE", 0 ],
 			"obj-30" : [ "Slidedown", "Slidedown", 0 ],
 			"obj-27" : [ "On Off", "On Off", 0 ],
 			"obj-33" : [ "Particles", "Particles", 0 ],
-			"obj-28" : [ "MouseX", "MouseX", 0 ],
-			"obj-13" : [ "FloatingWindow", "FloatingWindow", 0 ],
-			"obj-31" : [ "Distance", "Distance", 0 ],
 			"obj-35" : [ "SizeX", "SizeX", 0 ],
+			"obj-13" : [ "FloatingWindow", "FloatingWindow", 0 ],
 			"obj-37" : [ "Shape", "Shape", 0 ],
-			"obj-32" : [ "Color On Off", "Color On Off", 0 ],
-			"obj-29" : [ "MouseY", "MouseY", 0 ],
+			"obj-28" : [ "MouseX", "MouseX", 0 ],
+			"obj-34" : [ "SizeY", "SizeY", 0 ],
+			"obj-31" : [ "Distance", "Distance", 0 ],
 			"parameterbanks" : 			{
 
 			}
