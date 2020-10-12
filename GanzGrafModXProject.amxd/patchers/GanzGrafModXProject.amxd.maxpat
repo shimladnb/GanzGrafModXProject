@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 2,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -38,6 +38,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial Bold",
@@ -91,14 +92,14 @@
 					"presentation_rect" : [ 316.0, 92.0, 52.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : 10.0,
-							"parameter_longname" : "SizeY",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 8000.0,
 							"parameter_initial" : [ 1080 ],
-							"parameter_shortname" : "SizeY"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "SizeY",
+							"parameter_mmax" : 8000.0,
+							"parameter_mmin" : 10.0,
+							"parameter_shortname" : "SizeY",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -120,14 +121,14 @@
 					"presentation_rect" : [ 261.0, 92.0, 52.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : 10.0,
-							"parameter_longname" : "SizeX",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 8000.0,
 							"parameter_initial" : [ 1920 ],
-							"parameter_shortname" : "SizeX"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "SizeX",
+							"parameter_mmax" : 8000.0,
+							"parameter_mmin" : 10.0,
+							"parameter_shortname" : "SizeX",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -167,12 +168,12 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "FloatingWindow",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "FloatingWindow"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "FloatingWindow",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "FloatingWindow",
+							"parameter_type" : 2
 						}
 
 					}
@@ -224,12 +225,12 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "NDI TOGGLE",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
 							"parameter_initial" : [ 0 ],
-							"parameter_shortname" : "NDI TOGGLE"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "NDI TOGGLE",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "NDI TOGGLE",
+							"parameter_type" : 2
 						}
 
 					}
@@ -269,8 +270,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.0, 682.0, 115.0, 20.0 ],
-					"text" : "jit.ndi.send~ GanzGraf"
+					"patching_rect" : [ 286.0, 682.0, 132.0, 20.0 ],
+					"text" : "jit.ndi.send~ GanzGrafNDI"
 				}
 
 			}
@@ -278,9 +279,8 @@
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numinlets" : 1,
+					"numoutlets" : 0,
 					"patching_rect" : [ 78.0, 716.0, 248.0, 20.0 ],
 					"text" : "jit.gl.spoutsender sample @sendername GanzGraf"
 				}
@@ -293,8 +293,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-18",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 78.0, 759.0, 147.0, 22.0 ],
 					"text" : "jit.gl.syphonserver sample"
 				}
@@ -351,7 +352,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -384,6 +385,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "To bgcolor",
@@ -582,7 +584,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 25.0, 239.0, 34.0 ],
+					"patching_rect" : [ 21.0, 25.0, 239.0, 33.0 ],
 					"prototypename" : "ML.subpatcher-title",
 					"text" : "Ganz Graf Mod x",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.6 ]
@@ -613,7 +615,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 21.0, 58.0, 508.0, 44.0 ],
+					"patching_rect" : [ 21.0, 58.0, 508.0, 43.0 ],
 					"prototypename" : "M4L.patcher-story",
 					"text" : "This is a simple mod of an original Max patch by Masato Tsutsui downloaded from  http://adsr.jp by synnack. Idea from maxforlive.com user vh at http://www.maxforlive.com/library/device/133/ganz-graf-live",
 					"textcolor" : [ 1.0, 1.0, 1.0, 0.6 ]
@@ -666,10 +668,10 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "sphere", "torus", "cylinder", "opencylinder", "cube", "opencube", "plane", "circle" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "Shape",
 							"parameter_mmax" : 7,
-							"parameter_shortname" : "Shape"
+							"parameter_shortname" : "Shape",
+							"parameter_type" : 2
 						}
 
 					}
@@ -692,10 +694,10 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "points", "lines", "line_strip", "line_loop", "triangles", "tri_strip", "tri_fan", "quads", "quad_strip", "polygon", "tri_grid" ],
-							"parameter_type" : 2,
 							"parameter_longname" : "Particles",
 							"parameter_mmax" : 10,
-							"parameter_shortname" : "Particles"
+							"parameter_shortname" : "Particles",
+							"parameter_type" : 2
 						}
 
 					}
@@ -719,12 +721,12 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "Color On Off",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "Color On Off"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "Color On Off",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "Color On Off",
+							"parameter_type" : 2
 						}
 
 					}
@@ -746,11 +748,11 @@
 					"presentation_rect" : [ 123.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Distance",
-							"parameter_shortname" : "Distance"
+							"parameter_mmin" : -127.0,
+							"parameter_shortname" : "Distance",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -772,11 +774,11 @@
 					"presentation_rect" : [ 184.5, 142.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : -127.0,
 							"parameter_longname" : "Slidedown",
-							"parameter_shortname" : "Slidedown"
+							"parameter_mmin" : -127.0,
+							"parameter_shortname" : "Slidedown",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -798,11 +800,11 @@
 					"presentation_rect" : [ 184.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseY",
-							"parameter_shortname" : "MouseY"
+							"parameter_mmin" : -127.0,
+							"parameter_shortname" : "MouseY",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -824,11 +826,11 @@
 					"presentation_rect" : [ 123.5, 92.0, 36.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_mmin" : -127.0,
 							"parameter_longname" : "MouseX",
-							"parameter_shortname" : "MouseX"
+							"parameter_mmin" : -127.0,
+							"parameter_shortname" : "MouseX",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -852,12 +854,12 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "On Off",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1.0 ],
-							"parameter_shortname" : "On Off"
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "On Off",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "On Off",
+							"parameter_type" : 2
 						}
 
 					}
@@ -933,7 +935,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -966,6 +968,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -980,7 +983,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 2,
+											"revision" : 6,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1013,6 +1016,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-1",
@@ -1078,7 +1082,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 2,
+															"revision" : 6,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1111,6 +1115,7 @@
 														"tags" : "",
 														"style" : "",
 														"subpatcher_template" : "",
+														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"comment" : "",
@@ -1775,7 +1780,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1808,6 +1813,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1949,7 +1955,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 929.666747999999984, 862.0, 255.0, 40.0 ],
+					"patching_rect" : [ 929.666747999999984, 862.0, 255.0, 39.0 ],
 					"text" : "jit.gl.mesh sample @draw_mode points @lighting_enable 0 @smooth_shading 1 @blend_enable 1 @blend_mode 3 1 @texture tex1 @point_size 3"
 				}
 
@@ -2264,7 +2270,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2297,6 +2303,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -3893,7 +3900,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -3901,7 +3908,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -4106,43 +4113,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-32" : [ "Color On Off", "Color On Off", 0 ],
-			"obj-29" : [ "MouseY", "MouseY", 0 ],
-			"obj-45" : [ "NDI TOGGLE", "NDI TOGGLE", 0 ],
-			"obj-30" : [ "Slidedown", "Slidedown", 0 ],
-			"obj-27" : [ "On Off", "On Off", 0 ],
-			"obj-33" : [ "Particles", "Particles", 0 ],
-			"obj-35" : [ "SizeX", "SizeX", 0 ],
 			"obj-13" : [ "FloatingWindow", "FloatingWindow", 0 ],
-			"obj-37" : [ "Shape", "Shape", 0 ],
+			"obj-27" : [ "On Off", "On Off", 0 ],
 			"obj-28" : [ "MouseX", "MouseX", 0 ],
-			"obj-34" : [ "SizeY", "SizeY", 0 ],
+			"obj-29" : [ "MouseY", "MouseY", 0 ],
+			"obj-30" : [ "Slidedown", "Slidedown", 0 ],
 			"obj-31" : [ "Distance", "Distance", 0 ],
+			"obj-32" : [ "Color On Off", "Color On Off", 0 ],
+			"obj-33" : [ "Particles", "Particles", 0 ],
+			"obj-34" : [ "SizeY", "SizeY", 0 ],
+			"obj-35" : [ "SizeX", "SizeX", 0 ],
+			"obj-37" : [ "Shape", "Shape", 0 ],
+			"obj-45" : [ "NDI TOGGLE", "NDI TOGGLE", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
+				"name" : "jit.gl.syphonserver.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mc.jit.catch~.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "jit.gl.spoutsender.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "jit.ndi.send~.mxe64",
-				"type" : "mx64"
+				"name" : "jit.ndi.send~.mxo",
+				"type" : "iLaX"
 			}
  ],
 		"autosave" : 0,
-		"bgcolor" : [ 0.274509867647059, 0.279607817647059, 0.289803717647059, 1.0 ]
+		"bgcolor" : [ 0.322549083333333, 0.338627425490196, 0.355686070588235, 1.0 ]
 	}
 
 }
